@@ -6,7 +6,7 @@ public class Calculator {
 		if(text.equals("")){
 			return 0;
 		}
-		else if(text.contains(",") || text.contains("\n")){
+		else if(text.contains(",") || text.contains("\n") || text.contains("\\;")){
 			return sum(splitNumbers(text));
 		}
 		else
@@ -27,6 +27,6 @@ public class Calculator {
 			total += toInt(number);
 		}
 		return total;
-		
+
     }
 }
