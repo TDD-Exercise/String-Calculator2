@@ -27,5 +27,6 @@ public class Calculator {
 			total += toInt(number);
 		}
 		return total;
+		
     }
 }
