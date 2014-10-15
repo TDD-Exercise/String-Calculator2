@@ -42,4 +42,9 @@ public class CalculatorTest {
 	public void testNegitiveNumber()throws Exeption{
 		assertEquals(3, Calculator.add("-1"));
 	}
+
+	@Test
+	public void testIgnorBigger()throws Exeption{
+		assertEquals(30, Calculator.add("10,20,1001"));
+	}
 }
