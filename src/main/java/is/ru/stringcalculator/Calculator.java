@@ -23,14 +23,8 @@ public class Calculator {
      
     private static int sum(String[] numbers) throws Exception{
  		NegitiveNumbers(numbers);
-    	int total = 0;
-		for(String number : numbers){
-			if(toInt(number) > 1000){
-				continue;
-			}
-			total += toInt(number);
-		}
-		return total;
+    
+		return Biggerthan1000(numbers);
 
     }
 
@@ -42,4 +36,14 @@ public class Calculator {
     		}
     	}
     }
+private static int Biggerthan1000(String[] numbers) throws Exception{
+   int total = 0;
+    for(String number : numbers){
+			if(toInt(number) > 1000){
+				continue;
+			}
+			total += toInt(number);
+	}
+	return total;
+
 }
