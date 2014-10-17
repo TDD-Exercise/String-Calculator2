@@ -6,7 +6,7 @@ public class Calculator {
 		if(text.equals("")){
 			return 0;
 		}
-		else if(text.contains(",") || text.contains("\n") || text.contains("\\;")){
+		else if(text.contains(",") || text.contains("\n") || text.contains("\\;") || text.contains("\\***")){
 			return sum(splitNumbers(text));
 		}
 		else
@@ -32,7 +32,7 @@ public class Calculator {
  private static int NegitiveNumbers(String[] numbers) throws Exception{
     for(String number : numbers){
     		if(toInt(number) < 0){
-    			throw new Exception ("Negitives not allowed")
+    			throw new Exception ("Negitives not allowed");
     		}
     	}
     }
@@ -45,5 +45,5 @@ private static int Biggerthan1000(String[] numbers) throws Exception{
 			total += toInt(number);
 	}
 	return total;
-
+}
 }

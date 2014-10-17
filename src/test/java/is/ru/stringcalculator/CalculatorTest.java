@@ -47,4 +47,11 @@ public class CalculatorTest {
 	public void testIgnorBigger()throws Exeption{
 		assertEquals(30, Calculator.add("10,20,1001"));
 	}
+
+	@Test
+	public void testAnyLength()throws Exeption{
+		assertEquals(6, Calculator.add("//[***]\n1***2***3"));
+	}
+
 }
+
