@@ -6,7 +6,9 @@ public class Calculator {
 		if(text.equals("")){
 			return 0;
 		}
-		else if(text.contains(",") || text.contains("\n") || text.contains("\\;") || text.contains("\\***")){
+		else if(text.contains(",") || text.contains("\n") 
+			|| text.contains("\\;") || text.contains("\\***")
+			|| text.contains("\\*")|| text.contains("\\%")){
 			return sum(splitNumbers(text));
 		}
 		else
@@ -36,6 +38,8 @@ public class Calculator {
     		}
     	}
     }
+
+
 private static int Biggerthan1000(String[] numbers) throws Exception{
    int total = 0;
     for(String number : numbers){
