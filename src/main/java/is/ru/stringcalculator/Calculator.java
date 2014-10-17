@@ -8,7 +8,7 @@ public class Calculator {
 		}
 		else if(text.contains(",") || text.contains("\n") 
 			|| text.contains("\\;") || text.contains("\\***")
-			|| text.contains("\\*")|| text.contains("\\%")){
+			|| text.contains("\\*" && "\\%"){
 			return sum(splitNumbers(text));
 		}
 		else
